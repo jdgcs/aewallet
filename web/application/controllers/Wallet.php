@@ -17,6 +17,14 @@ class Wallet extends CI_Controller {
 		$this->load->view('wallet',$data);
 	}
 	
+	public function other($ak){
+		$data['ak']=$ak;
+		$data['username']=$ak;
+		$this->load->model('languages');	
+		$data['mylang']=$this->languages->getPreferredLanguage();	
+		$this->load->view('wallets',$data);
+		}
+	
 	public function tx($ak){		
 		$this->load->model('wallets');
 		$data=$this->wallets->getTxHistory($ak);		

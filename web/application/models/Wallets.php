@@ -62,7 +62,7 @@ public function getAccount($ak){
 	$data['nonce']=0;
 	$data['ak']=$ak;
 	
-	$data['username']="None";	
+	$data['username']=$ak;	
 	$data['isonline']="<small class=\"label bg-yellow\">Offline</small>";
 	
 	
