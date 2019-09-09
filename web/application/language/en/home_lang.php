@@ -24,3 +24,4 @@ $lang['info_mainpage'] = 'Main';
 $lang['info_wallet'] = 'Wallet';
 $lang['info_help'] = 'Help';
 $lang['info_otherwallets'] = 'Other Wallets';
+$lang['info_generatetx'] = 'Generate Transaction';

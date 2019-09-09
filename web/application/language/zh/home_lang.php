@@ -23,4 +23,4 @@ $lang['info_mainpage'] = '主页';
 $lang['info_wallet'] = '钱包';
 $lang['info_help'] = '帮助';
 $lang['info_otherwallets'] = '其他钱包';
-
+$lang['info_generatetx'] = '生成交易';

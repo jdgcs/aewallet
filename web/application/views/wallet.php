@@ -200,7 +200,7 @@ $this->lang->load('home');
                   <br />Offline Nonce               
                   </center>
                   
-		 <button type="submit" class="btn btn-info pull-left">生成交易</button>
+		 <button type="submit" class="btn btn-info pull-left"><?php echo $this->lang->line('info_generatetx');?></button>
 		</div>
        
        
