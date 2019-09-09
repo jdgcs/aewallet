@@ -47,8 +47,8 @@ $this->lang->load('home');
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-      h1
-        <small>small</small>
+      请确保你的电脑足够安全。
+        <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -58,7 +58,9 @@ $this->lang->load('home');
 
     <!-- Main content -->
     <section class="content">
+很简单的aepp，没必要写教程了。<br /><br />
 
+有任何问题，请加微信:aeknow。
 
     </section>
     <!-- /.content -->

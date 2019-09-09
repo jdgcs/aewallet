@@ -20,7 +20,7 @@
 		   <li class="header"> <center><h4>Links</h4></center></li>  
       <li>
           <a href="/index.php/wallet/other/<?php echo $ak;?>" >
-            <i class="fa fa-dashboard"></i> <span><?php echo $this->lang->line('info_otherwallets');?></span>          
+            <i class="fa fa-object-ungroup"></i> <span><?php echo $this->lang->line('info_otherwallets');?></span>          
           </a>
         </li>
        </ul>  

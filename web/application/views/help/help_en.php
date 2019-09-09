@@ -47,18 +47,19 @@ $this->lang->load('home');
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-      h1
-        <small>small</small>
+      Please make sure that your computer is safe enough firstly.
+        <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">nav</a></li>
+        <li><a href="#">help</a></li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-
+It seems that there is no necessary to write a manual for such a simple aepp. <br /><br />
+Any questions, please join the telegram: <a href="https://t.me/aeknow" target="_blank">https://t.me/aeknow</a>
 
     </section>
     <!-- /.content -->
