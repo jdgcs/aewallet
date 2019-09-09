@@ -1,6 +1,6 @@
 # awaellet
 aWaellet: A PC-based wallet of Aeternity.
 
-The binary release: https://github.com/jdgcs/awaellet/releases/tag/0.0.1
+The binary release: https://github.com/jdgcs/aewallet/releases/tag/1.0.0-rc
 
 # Instructions(TODO)
