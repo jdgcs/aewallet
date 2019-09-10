@@ -14,8 +14,10 @@ The binary release: https://github.com/jdgcs/aewallet/releases/tag/1.0.0-rc
 ## Run
 - Windows: **aeWallet.bat**
 
-## Settings
-TODO
+## Notice
+1. Please put the wallet to the root directory such as D:\  **without** special characters in the path.
+2. With long payload, please set the gas fee manually, such as 0.01 AE.
+
 
 ## Build from sourcecode - Windows
 
