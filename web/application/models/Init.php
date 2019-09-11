@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Init extends CI_Model {
 	
 	public function newaccount(){
-		$dir= realpath('.').'\db';
+		$dir= realpath('.').'/db';
 		if(!$this->is_empty_dir($dir)){
 			echo "inited!";
 			echo "<br><a href=/>Home</a>";
@@ -18,14 +18,14 @@ class Init extends CI_Model {
 		}
 			
 		///account init///
-		$cmd=realpath('.').'\\..\\env\\signtx.exe account create home --password '.$password;		
+		$cmd=realpath('.').'/../env/signtx.exe account create home --password '.$password;		
 		exec($cmd,$ret);
 		$tmpstr=explode(" ",$ret[1]);
 		$account= $tmpstr[count($tmpstr)-1];
 		echo "Account=>$account<br>";
 		//$dir=".\\db\\$account";
 		//mkdir ($dir,0777,true);
-		$dir_file=".\\db\\$account";
+		$dir_file="./db/$account";
 		copy("home",$dir_file);
 		unlink("home");
 		$fp = fopen($dir_file, "r");

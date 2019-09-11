@@ -5,7 +5,7 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$dir= realpath('.').'\db';	
+		$dir= realpath('.').'/db';	
 		
 		if($this->is_empty_dir($dir)){
 			$this->load->library('form_validation');
@@ -36,7 +36,7 @@ class Welcome extends CI_Controller {
 		}
 	
 	public function showHome(){
-		$dir= realpath('.').'\db';
+		$dir= realpath('.').'/db';
 		$data['ak']=$this->GetAKName($dir);		
 		$data['username']=$data['ak'];
 		

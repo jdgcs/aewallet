@@ -55,11 +55,11 @@ public function sendTx($sender_id,$recipient_id,$amount,$password,$payload="",$g
 	$ttl=0;
 	$tx="";
 	
-	$cmd=realpath('.')."\\..\\env\\signtx.exe tx spend $sender_id $recipient_id $amount \"$payload\" --nonce $nonce --ttl $ttl --fee $gas";	
+	$cmd=realpath('.')."/../env/signtx.exe tx spend $sender_id $recipient_id $amount \"$payload\" --nonce $nonce --ttl $ttl --fee $gas";	
 	exec($cmd,$ret);
 	$tmpstr=explode(" ",$ret[7]);
 	$tx= $tmpstr[count($tmpstr)-1];
-	$cmd=realpath('.')."\\..\\env\\signtx.exe account sign ".realpath('.')."\\db\\$sender_id\\home $tx --password $password -n ae_mainnet";
+	$cmd=realpath('.')."/../env/signtx.exe account sign ".realpath('.')."/db/$sender_id $tx --password $password -n ae_mainnet";
 	exec($cmd,$ret);
 
 	if(strpos($ret[8],"account address")>0){
@@ -136,11 +136,12 @@ public function generateTx($sender_id,$recipient_id,$amount,$password,$payload="
 	$ttl=0;
 	$tx="";
 	
-	$cmd=realpath('.')."\\..\\env\\signtx.exe tx spend $sender_id $recipient_id $amount \"$payload\" --nonce $nonce --ttl $ttl --fee $gas";	
+	$cmd=realpath('.')."/../env/signtx.exe tx spend $sender_id $recipient_id $amount \"$payload\" --nonce $nonce --ttl $ttl --fee $gas";	
+	//echo $cmd;
 	exec($cmd,$ret);
 	$tmpstr=explode(" ",$ret[7]);
 	$tx= $tmpstr[count($tmpstr)-1];
-	$cmd=realpath('.')."\\..\\env\\signtx.exe account sign ".realpath('.')."\\db\\$sender_id $tx --password $password -n ae_mainnet";
+	$cmd=realpath('.')."/../env/signtx.exe account sign ".realpath('.')."/db/$sender_id $tx --password $password -n ae_mainnet";
 	exec($cmd,$ret);
 
 	if(strpos($ret[8],"account address")>0){
