@@ -126,7 +126,7 @@ $this->lang->load('home');
                   <label for="inputEmail3" class="col-sm-2 control-label"><font color=red>*</font><?php echo $this->lang->line('info_recipientaddress');?></label>
 
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" name="recipient_id" placeholder="address as ak_**** or AENS name as user.test, user.aet">
+                    <input type="text" class="form-control" name="recipient_id" placeholder="address as ak_**** or AENS name as liuyang.chain">
                   </div>
                 </div>
                 

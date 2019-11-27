@@ -13,7 +13,7 @@ The binary release: https://github.com/jdgcs/aewallet/releases/tag/1.0.0
 3. Basic transaction with payload.
 
 
-## Run
+## Run 
 ### Windows
 Run: **aeWallet.bat**
 ### Ubuntu 18.04+
@@ -30,4 +30,4 @@ Run: **aeWallet.bat**
 
 1. Compile https://github.com/aeternity/aepp-sdk-go, rename aepp-sdk-go.exe to signtx.exe, and copy it the the ./env directory.
 2.  Download PHP from https://windows.php.net/download#php-7.3, and extract them to the ./env directory, enable culr extension.
-3. Run: **aeWallet.bat**
+3. Run: **aeWallet.bat** or **./start.sh**

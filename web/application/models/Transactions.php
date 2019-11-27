@@ -29,7 +29,7 @@ public function sendTx($sender_id,$recipient_id,$amount,$password,$payload="",$g
 	$data['gas']=number_format($gas,5,".","");
 	
 	if(!$this->checkAddress($recipient_id)){
-		if(strpos($recipient_id,".test")>0 || strpos($recipient_id,".aet")>0 ){
+		if(strpos($recipient_id,".test")>0 || strpos($recipient_id,".chain")>0 ){
 			$recipient_id=$this->getAENS($recipient_id);
 			if(!$this->checkAddress($recipient_id)){
 				echo "BAD recipient_id";
@@ -108,7 +108,7 @@ public function generateTx($sender_id,$recipient_id,$amount,$password,$payload="
 	$data['gas']=number_format($gas,5,".","");
 	
 	if(!$this->checkAddress($recipient_id)){
-		if(strpos($recipient_id,".test")>0 || strpos($recipient_id,".aet")>0 ){
+		if(strpos($recipient_id,".test")>0 || strpos($recipient_id,".chain")>0 ){
 			$recipient_id=$this->getAENS($recipient_id);
 			if(!$this->checkAddress($recipient_id)){
 				echo "BAD recipient_id";
@@ -247,8 +247,8 @@ function getNonce($ak){
 	//echo "$url\n$websrc\n";
 	$tagstr='"nonce":';
 	if(strpos($websrc,$tagstr)>0){
-		$tmpstr=explode($tagstr,$websrc);
-		$currentnonce=str_replace("}","",$tmpstr[1]);
+		$info=json_decode($websrc);
+		$currentnonce=$info->nonce;
 		$newnonce=$currentnonce+1;
 		return $newnonce;
 	}
