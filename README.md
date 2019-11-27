@@ -1,16 +1,13 @@
 # aeWallet
 aeWallet: A PC-based wallet of Aeternity.
 
-The binary release: https://github.com/jdgcs/aewallet/releases/tag/1.0.0
-
-百度网盘地址:
-1. Windows: https://pan.baidu.com/s/1eEscxHn2EF_2FAHB8npXwA Code: tqtk
-2. Ubuntu: https://pan.baidu.com/s/1Y6EVHI7FM9r1voMBOYADvA Code: vrqx
+The binary release: https://github.com/jdgcs/aewallet/releases/tag/1.2
 
 ## Features
 1. ONLINE and OFFLINE transactions can be made.
 2. Support local and remote fullnode.
 3. Basic transaction with payload.
+4. Support .chain AENS name.
 
 
 ## Run 
